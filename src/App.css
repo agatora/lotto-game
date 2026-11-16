@@ -121,3 +121,14 @@ h1 em { color: #779b3d; font-style: normal; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+.copyright-notice {
+  display: block;
+  margin-top: 9px;
+  color: #a0a99b;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.6;
+  text-align: center;
+}
