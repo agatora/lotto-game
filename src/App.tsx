@@ -50,7 +50,6 @@ function App() {
 
   return (
     <main className="page-shell">
-      <div className="ambient ambient-two" />
       <header className="topbar">
   <a
     className="brand-link"
