@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/lotto-game/static/css/main.15b6b692.css",
-    "main.js": "/lotto-game/static/js/main.a4e7af99.js",
+    "main.css": "/lotto-game/static/css/main.d8d877f7.css",
+    "main.js": "/lotto-game/static/js/main.fee62a88.js",
     "static/js/453.b23bfe83.chunk.js": "/lotto-game/static/js/453.b23bfe83.chunk.js",
     "index.html": "/lotto-game/index.html",
-    "main.15b6b692.css.map": "/lotto-game/static/css/main.15b6b692.css.map",
-    "main.a4e7af99.js.map": "/lotto-game/static/js/main.a4e7af99.js.map",
+    "main.d8d877f7.css.map": "/lotto-game/static/css/main.d8d877f7.css.map",
+    "main.fee62a88.js.map": "/lotto-game/static/js/main.fee62a88.js.map",
     "453.b23bfe83.chunk.js.map": "/lotto-game/static/js/453.b23bfe83.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.15b6b692.css",
-    "static/js/main.a4e7af99.js"
+    "static/css/main.d8d877f7.css",
+    "static/js/main.fee62a88.js"
   ]
 }
