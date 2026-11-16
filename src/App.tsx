@@ -53,7 +53,7 @@ function App() {
       <div className="ambient ambient-two" />
       <header className="topbar">
         <a className="brand" href="./" aria-label="별바람이야기 홈">
-          <span className="brand-mark" aria-hidden="true">✦</span>
+          
           <span>별바람이야기</span>
         </a>
         <span className="top-tag"><span className="live-dot" /> LOTTO 6/45</span>
