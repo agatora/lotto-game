@@ -147,3 +147,21 @@ h1 em { color: #779b3d; font-style: normal; }
 .footer {
   flex-wrap: wrap;
 }
+.brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.brand-link:hover {
+  opacity: 0.85;
+}
+
+.brand-star {
+  color: #f5c542;
+  font-size: 1.15em;
+  line-height: 1;
+}
