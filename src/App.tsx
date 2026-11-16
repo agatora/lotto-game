@@ -53,9 +53,9 @@ function App() {
       <div className="ambient ambient-one" />
       <div className="ambient ambient-two" />
       <header className="topbar">
-        <a className="brand" href="./" aria-label="럭키 식스 홈">
+        <a className="brand" href="./" aria-label="별바람이야기 홈">
           <span className="brand-mark">6</span>
-          <span>LUCKY <b>SIX</b></span>
+          <span>별바람이야기</span>
         </a>
         <span className="top-tag"><span className="live-dot" /> LOTTO 6/45</span>
       </header>
@@ -126,7 +126,9 @@ function App() {
 
       <footer className="footer">
         <span className="footer-star">✳</span>
-        <span>GOOD LUCK, HAVE A NICE DAY</span>
+        <a href="https://smartstore.naver.com/byeolbaram" target="_blank" rel="noopener noreferrer">
+          별바람이야기
+        </a>
         <span className="footer-star">✳</span>
       </footer>
     </main>
