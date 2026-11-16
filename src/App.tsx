@@ -50,18 +50,17 @@ function App() {
 
   return (
     <main className="page-shell">
-      <div className="ambient ambient-one" />
       <div className="ambient ambient-two" />
       <header className="topbar">
         <a className="brand" href="./" aria-label="별바람이야기 홈">
-          <span className="brand-mark">6</span>
+          <span className="brand-mark" aria-hidden="true">✦</span>
           <span>별바람이야기</span>
         </a>
         <span className="top-tag"><span className="live-dot" /> LOTTO 6/45</span>
       </header>
 
       <section className="hero">
-        <div className="eyebrow"><span>✦</span> 오늘의 행운을 뽑아보세요</div>
+        <div className="eyebrow"><span>✦</span> 오늘의 행운을 뽑아보세요 <span>✦</span></div>
         <h1>행운의 번호,<br /><em>지금 시작!</em></h1>
         <p className="intro">가볍게 톡, 나만의 행운 번호 6개를 만나보세요.</p>
 
