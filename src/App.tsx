@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import './App.css';
 
@@ -21,7 +22,10 @@ function getRandomLottoNumbers(): Game {
 
 function LottoBall({ number }: { number: number }) {
   return (
-    <span className={`lotto-ball ball-${getBallColor(number)}`} aria-label={`${number}번`}>
+    <span
+      className={`lotto-ball ball-${getBallColor(number)}`}
+      aria-label={`${number}번`}
+    >
       {number}
     </span>
   );
@@ -38,7 +42,11 @@ function App() {
 
   const copyNumbers = async () => {
     if (!games.length) return;
-    const text = games.map((game, index) => `${index + 1}게임: ${game.join(', ')}`).join('\n');
+
+    const text = games
+      .map((game, index) => `${index + 1}게임: ${game.join(', ')}`)
+      .join('\n');
+
     try {
       await navigator.clipboard.writeText(text);
       setCopied(true);
@@ -50,38 +58,57 @@ function App() {
 
   return (
     <main className="page-shell">
+
       <header className="topbar">
-  <a
-    className="brand-link"
-    href="https://smartstore.naver.com/byeolbaram"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <span>별바람이야기</span>
-    <span className="brand-star">★</span>
-  </a>
-</header>
+        <a
+          className="brand-link"
+          href="https://smartstore.naver.com/byeolbaram"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="brand-star">★</span>
+          <span>별바람이야기</span>
+        </a>
+      </header>
 
       <section className="hero">
-        <div className="eyebrow"><span>✦</span> 오늘의 행운을 뽑아보세요 <span>✦</span></div>
-        <h1>행운의 번호,<br /><em>지금 시작!</em></h1>
-        <p className="intro">가볍게 톡, 나만의 행운 번호 6개를 만나보세요.</p>
+
+        <div className="eyebrow">
+          <span>✦</span> 오늘의 행운을 뽑아보세요 <span>✦</span>
+        </div>
+
+        <h1>
+          행운의 번호,<br />
+          <em>지금 시작!</em>
+        </h1>
+
+        <p className="intro">
+          가볍게 톡, 나만의 행운 번호 6개를 만나보세요.
+        </p>
 
         <div className="lotto-card">
+
           <div className="card-heading">
             <div>
               <span className="card-kicker">YOUR LUCKY NUMBERS</span>
               <h2>행운 번호 추첨</h2>
             </div>
-            
+          </div>
 
           {games.length > 0 ? (
             <div className="results" aria-live="polite">
               {games.map((game, index) => (
                 <div className="game-row" key={`${games.length}-${index}`}>
-                  {games.length > 1 && <div className="game-label">{String(index + 1).padStart(2, '0')}</div>}
+                  {games.length > 1 && (
+                    <div className="game-label">
+                      {String(index + 1).padStart(2, '0')}
+                    </div>
+                  )}
+
                   <div className="balls">
-                    {game.map(number => <LottoBall key={number} number={number} />)}
+                    {game.map(number => (
+                      <LottoBall key={number} number={number} />
+                    ))}
                   </div>
                 </div>
               ))}
@@ -98,23 +125,36 @@ function App() {
           )}
 
           <div className="card-actions">
-            <button className="primary-button" onClick={() => generateGames(1)}>
+            <button
+              className="primary-button"
+              onClick={() => generateGames(1)}
+            >
               <span className="sparkle">✦</span> 번호 생성하기
             </button>
-            <button className="secondary-button" onClick={() => generateGames(5)}>
+
+            <button
+              className="secondary-button"
+              onClick={() => generateGames(5)}
+            >
               5게임 생성
             </button>
+
             {games.length > 0 && (
               <button className="copy-button" onClick={copyNumbers}>
                 {copied ? '✓ 복사 완료' : '번호 복사'}
               </button>
             )}
           </div>
-          <p className="card-note">번호는 1부터 45까지 중복 없이 무작위로 추첨됩니다.</p>
+
+          <p className="card-note">
+            번호는 1부터 45까지 중복 없이 무작위로 추첨됩니다.
+          </p>
+
         </div>
 
         <div className="color-guide">
           <span className="guide-title">공 색상 안내</span>
+
           <div className="guide-items">
             <span><i className="guide-ball yellow" />1–10</span>
             <span><i className="guide-ball blue" />11–20</span>
@@ -123,20 +163,29 @@ function App() {
             <span><i className="guide-ball green" />41–45</span>
           </div>
         </div>
+
       </section>
 
       <footer className="footer">
         <span className="footer-star">✳</span>
-        <a href="https://smartstore.naver.com/byeolbaram" target="_blank" rel="noopener noreferrer">
+
+        <a
+          href="https://smartstore.naver.com/byeolbaram"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           별바람이야기
         </a>
+
         <span className="footer-star">✳</span>
+
         <small className="copyright-notice">
           본 사이트의 디자인 및 콘텐츠는 별바람이야기의 자산입니다.
-           <br />
+          <br />
           무단 복제·배포·상업적 이용을 금합니다.
         </small>
       </footer>
+
     </main>
   );
 }
