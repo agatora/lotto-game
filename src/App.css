@@ -47,13 +47,6 @@ button {
   pointer-events: none;
 }
 
-.ambient-two {
-  width: 580px;
-  height: 580px;
-  right: -420px;
-  top: 380px;
-}
-
 /* 상단 메뉴 */
 .topbar {
   position: relative;
