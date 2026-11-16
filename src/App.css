@@ -132,3 +132,18 @@ h1 em { color: #779b3d; font-style: normal; }
   line-height: 1.6;
   text-align: center;
 }
+
+.copyright-notice {
+  display: block;
+  flex-basis: 100%;
+  margin-top: 8px;
+  color: #a4ad9f;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.6;
+  text-align: center;
+}
+.footer {
+  flex-wrap: wrap;
+}
