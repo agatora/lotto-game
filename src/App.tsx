@@ -73,8 +73,7 @@ function App() {
               <span className="card-kicker">YOUR LUCKY NUMBERS</span>
               <h2>행운 번호 추첨</h2>
             </div>
-            <span className="round-stamp">6<span>/</span>45</span>
-          </div>
+            
 
           {games.length > 0 ? (
             <div className="results" aria-live="polite">
