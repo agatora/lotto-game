@@ -52,16 +52,16 @@ function App() {
     <main className="page-shell">
       <div className="ambient ambient-two" />
       <header className="topbar">
-        <a
-  className="brand-link"
-  href="https://smartstore.naver.com/byeolbaram"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <span className="brand-star">★</span>
-  <span>별바람이야기</span>
-</a>
-      </header>
+  <a
+    className="brand-link"
+    href="https://smartstore.naver.com/byeolbaram"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span>별바람이야기</span>
+    <span className="brand-star">★</span>
+  </a>
+</header>
 
       <section className="hero">
         <div className="eyebrow"><span>✦</span> 오늘의 행운을 뽑아보세요 <span>✦</span></div>
@@ -134,7 +134,9 @@ function App() {
         </a>
         <span className="footer-star">✳</span>
         <small className="copyright-notice">
-          본 사이트의 디자인 및 콘텐츠는 별바람이야기의 자산입니다. 무단 복제·배포·상업적 이용을 금합니다.
+          본 사이트의 디자인 및 콘텐츠는 별바람이야기의 자산입니다.
+           <br />
+          무단 복제·배포·상업적 이용을 금합니다.
         </small>
       </footer>
     </main>
