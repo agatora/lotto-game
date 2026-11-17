@@ -456,17 +456,18 @@ h1 em {
 
 /* 하단 */
 
+
 .footer {
   position: relative;
   z-index: 1;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
   width: 100%;
   max-width: 1060px;
   margin: 0 auto;
+  gap: 8px;
   color: #87957f;
   font-size: 15px;
   font-weight: 800;
@@ -474,11 +475,19 @@ h1 em {
   text-align: center;
 }
 
+.footer-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
 
 .footer-star {
   color: #a9c66c;
   font-size: 13px;
 }
+
 
 .footer a {
   color: inherit;
