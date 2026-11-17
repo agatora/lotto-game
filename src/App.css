@@ -455,6 +455,7 @@ h1 em {
 .guide-ball.green { background: #55a965; }
 
 /* 하단 */
+
 .footer {
   position: relative;
   z-index: 1;
@@ -463,11 +464,16 @@ h1 em {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
   color: #87957f;
   font-size: 15px;
   font-weight: 800;
   letter-spacing: .12em;
+  text-align: center;
 }
+
 
 .footer-star {
   color: #a9c66c;
