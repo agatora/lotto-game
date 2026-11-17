@@ -166,25 +166,27 @@ function App() {
 
       </section>
 
-      <footer className="footer">
-        <span className="footer-star">✳</span>
+      
+<footer className="footer">
+  <div className="footer-brand">
+    <span className="footer-star">✳</span>
+    <a
+      href="https://smartstore.naver.com/byeolbaram"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      별바람이야기
+    </a>
+    <span className="footer-star">✳</span>
+  </div>
 
-        <a
-          href="https://smartstore.naver.com/byeolbaram"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          별바람이야기
-        </a>
+  <small className="copyright-notice">
+    본 사이트의 디자인 및 콘텐츠는 별바람이야기의 자산입니다.
+    <br />
+    무단 복제·배포·상업적 이용을 금합니다.
+  </small>
+</footer>
 
-        <span className="footer-star">✳</span>
-
-        <small className="copyright-notice">
-          본 사이트의 디자인 및 콘텐츠는 별바람이야기의 자산입니다.
-          <br />
-          무단 복제·배포·상업적 이용을 금합니다.
-        </small>
-      </footer>
 
     </main>
   );
