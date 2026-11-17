@@ -66,8 +66,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className="brand-star">★</span>
           <span>별바람이야기</span>
+          <span className="brand-star">★</span>
+          
         </a>
       </header>
 
